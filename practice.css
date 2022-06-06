@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginnavbar {
+    background-color: palevioletred;
+}
+.navcontainer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+}
+.navcontents a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.navsearch input {
+    border-radius: 5px;
+    border: 1px solid palevioletred;
+}
+.navsearch button {
+    color: white;
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+input::placeholder {
+    color: gray;
+}
+
+@media (max-width:950px) {
+    .navcontainer {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:680px) {
+    .navcontainer {
+        
+        text-align: center;
+        justify-content: space-around;
+    }
+    .navsearch {
+        display: none;
+    }
+}
